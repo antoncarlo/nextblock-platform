@@ -61,67 +61,13 @@ const Hero = ({
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
-          style={{ filter: 'brightness(0.4) contrast(1.2)' }}
+          className="absolute inset-0 w-full h-full object-cover opacity-80"
         >
           <source src="/world-background.mp4" type="video/mp4" />
         </video>
         
-        {/* Overlay gradient for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60" />
-        
-        {/* Subtle animated orbs for extra depth */}
-        <motion.div
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl"
-          animate={{
-            x: [0, 50, 0],
-            y: [0, -25, 0],
-            scale: [1, 1.1, 1],
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{
-            duration: 12,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-        
-        <motion.div
-          className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-green-500/20 to-cyan-500/20 rounded-full blur-3xl"
-          animate={{
-            x: [0, -40, 0],
-            y: [0, 20, 0],
-            scale: [1, 0.9, 1],
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 3
-          }}
-        />
-
-        {/* Floating Particles */}
-        {[...Array(15)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-1 bg-white/30 rounded-full"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              y: [0, -80, 0],
-              opacity: [0, 0.8, 0],
-            }}
-            transition={{
-              duration: 4 + Math.random() * 3,
-              repeat: Infinity,
-              delay: Math.random() * 3,
-            }}
-          />
-        ))}
+        {/* Very light overlay for text readability */}
+        <div className="absolute inset-0 bg-black/20" />
       </div>
 
       {/* Content */}
