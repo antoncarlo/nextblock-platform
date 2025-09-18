@@ -46,14 +46,11 @@ const Navbar = ({
             className="flex items-center cursor-pointer"
             onClick={() => navigate('/')}
           >
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">N</span>
-              </div>
-              <span className="text-xl font-bold text-slate-100">
-                NEXTBLOCK
-              </span>
-            </div>
+            <img 
+              src="/nextblock-logo.svg" 
+              alt="NextBlock Logo" 
+              className="h-10 w-auto"
+            />
           </motion.div>
 
           {/* Navigation Links */}

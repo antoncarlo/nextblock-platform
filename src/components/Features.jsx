@@ -5,44 +5,32 @@ const Features = () => {
   const features = [
     {
       icon: Shield,
-      title: 'Enterprise Security',
-      description: 'Bank-grade security with multi-layer protection and regulatory compliance',
-      color: 'bg-blue-500'
-    },
-    {
-      icon: TrendingUp,
-      title: 'High Returns',
-      description: '14.2% average annual returns with diversified insurance risk exposure',
-      color: 'bg-green-500'
-    },
-    {
-      icon: Globe,
-      title: 'Global Access',
-      description: 'Access to worldwide insurance markets and cross-border opportunities',
-      color: 'bg-purple-500'
+      title: 'Sicurezza Bancaria',
+      description: 'Multi-signature, cold storage 95%, audit continui',
+      color: '#3B82F6'
     },
     {
       icon: Zap,
-      title: 'Ultra-Fast Trading',
-      description: 'Microsecond execution powered by HyperLiquid infrastructure',
-      color: 'bg-yellow-500'
+      title: 'Trading 24/7',
+      description: 'Settlement T+0, spread <0.5%, liquidità garantita',
+      color: '#3B82F6'
     },
     {
-      icon: Users,
-      title: 'Institutional Grade',
-      description: 'Built for institutional investors with professional-grade tools',
-      color: 'bg-red-500'
+      icon: Globe,
+      title: 'Accesso Globale',
+      description: 'KYC semplice, nessuna barriera geografica',
+      color: '#3B82F6'
     },
     {
       icon: BarChart,
-      title: 'Real-time Analytics',
-      description: 'Comprehensive market data and risk assessment tools',
-      color: 'bg-indigo-500'
+      title: 'Trasparenza Totale',
+      description: 'Dashboard real-time, metriche di rischio, reporting automatico',
+      color: '#3B82F6'
     }
   ]
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20" style={{backgroundColor: '#1E293B'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -51,16 +39,15 @@ const Features = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Platform Features
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{color: '#E2E8F0'}}>
+            Piattaforma Sicura e Veloce
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Bringing the $16T insurance industry on-chain with decentralized, 
-            24/7 stablecoin-based accounting, tracking, and tokenization solutions.
+          <p className="text-xl max-w-3xl mx-auto" style={{color: '#94A3B8'}}>
+            Tecnologia enterprise per la tokenizzazione assicurativa con standard istituzionali.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature, index) => {
             const Icon = feature.icon
             return (
@@ -70,15 +57,17 @@ const Features = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
+                className="rounded-lg p-6 transition-all duration-200"
+                style={{backgroundColor: '#0A192F', border: '1px solid #334155'}}
               >
-                <div className={`w-12 h-12 ${feature.color} rounded-lg flex items-center justify-center mb-4`}>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" 
+                  style={{backgroundColor: feature.color}}>
                   <Icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <h3 className="text-xl font-semibold mb-3" style={{color: '#E2E8F0'}}>
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="leading-relaxed" style={{color: '#94A3B8'}}>
                   {feature.description}
                 </p>
               </motion.div>

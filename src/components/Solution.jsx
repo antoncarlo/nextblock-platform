@@ -86,8 +86,7 @@ const Solution = () => {
             className="text-4xl md:text-5xl font-bold mb-6"
             style={{color: '#E2E8F0'}}
           >
-            Perché il mercato assicurativo{' '}
-            <span style={{color: '#3B82F6'}}>necessita innovazione</span>
+            Problemi del Mercato Tradizionale
           </motion.h2>
           
           <motion.p
@@ -98,9 +97,9 @@ const Solution = () => {
             className="text-xl mb-12 max-w-4xl mx-auto"
             style={{color: '#94A3B8'}}
           >
-            Le compagnie assicurative sono inefficienti, usano processi lenti e costosi che sprecano 
-            parte del loro fatturato potenziale. Esauriscono la loro capacità finanziaria e sono 
-            costrette a rifiutare nuovi clienti.
+            Capacità Limitata - $124B di opportunità perse
+            Processi Lenti - 20% di costi inutili  
+            Asset Bloccati - Zero liquidità
           </motion.p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">

@@ -69,14 +69,16 @@ const Dashboard = ({
           {/* Header */}
           <div className="bg-white rounded-t-xl p-6 border-b">
             <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-2">
+              <button 
+                onClick={() => navigate('/')}
+                className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
+              >
                 <img 
-                  src="/assets/nextblock-logo-icon.png" 
-                  alt="NextBlock" 
-                  className="w-8 h-8"
+                  src="/nextblock-logo.svg" 
+                  alt="NextBlock Logo" 
+                  className="h-8 w-auto"
                 />
-                <span className="text-xl font-bold text-gray-900">NEXTBLOCK</span>
-              </div>
+              </button>
               <button
                 onClick={onDisconnect}
                 className="text-gray-500 hover:text-red-500 transition-colors"
@@ -160,13 +162,17 @@ const Dashboard = ({
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center space-x-4">
+            <button 
+              onClick={() => navigate('/')}
+              className="flex items-center space-x-4 hover:opacity-80 transition-opacity"
+            >
               <img 
-                src="/assets/nextblock-logo-icon.png" 
-                alt="NextBlock" 
-                className="w-8 h-8"
+                src="/nextblock-logo.svg" 
+                alt="NextBlock Logo" 
+                className="h-8 w-auto"
               />
-              <span className="text-xl font-bold text-gray-900">NEXTBLOCK</span>
+            </button>
+            <div className="flex items-center space-x-4">
               <span className="text-sm bg-gray-100 px-2 py-1 rounded-full">
                 {userRole === 'insurance' ? 'Insurance Portal' : 'Investor Dashboard'}
               </span>
