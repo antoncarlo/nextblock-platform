@@ -1,16 +1,20 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import './App.css'
+import './styles/brand-identity.css'
+import './styles/nextblock-palette.css'
 
 // Landing Page Components
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import ConnectivityTestPanel from './components/ConnectivityTestPanel'
+
 import Alliances from './components/Alliances'
 import Solution from './components/Solution'
 import Features from './components/Features'
 import CEO from './components/CEO'
 import Roadmap from './components/Roadmap'
+import QuoteVideoSection from './components/QuoteVideoSection'
 import Footer from './components/Footer'
 
 // Platform Components
@@ -88,6 +92,7 @@ function App() {
       <Features />
       <CEO />
       <Roadmap />
+      <QuoteVideoSection />
       <Footer />
     </>
   )

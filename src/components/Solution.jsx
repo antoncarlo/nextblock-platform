@@ -70,8 +70,8 @@ const Solution = () => {
     }
   ]
 
-  return (
-    <section ref={ref} className="py-20 bg-gray-50 overflow-hidden">
+    return (
+    <section ref={ref} className="py-20 overflow-hidden" style={{backgroundColor: '#1E293B'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Problem Section */}
         <motion.div 
@@ -83,10 +83,11 @@ const Solution = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+            className="text-4xl md:text-5xl font-bold mb-6"
+            style={{color: '#E2E8F0'}}
           >
             Perché il mercato assicurativo{' '}
-            <span className="text-red-500">perde soldi</span>
+            <span style={{color: '#3B82F6'}}>necessita innovazione</span>
           </motion.h2>
           
           <motion.p
@@ -94,7 +95,8 @@ const Solution = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-xl text-gray-600 mb-12 max-w-4xl mx-auto"
+            className="text-xl mb-12 max-w-4xl mx-auto"
+            style={{color: '#94A3B8'}}
           >
             Le compagnie assicurative sono inefficienti, usano processi lenti e costosi che sprecano 
             parte del loro fatturato potenziale. Esauriscono la loro capacità finanziaria e sono 
@@ -110,21 +112,23 @@ const Solution = () => {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05 }}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+                className="rounded-lg p-8 transition-all duration-200"
+                style={{backgroundColor: '#0A192F', borderColor: '#334155', border: '1px solid'}}
               >
                 <motion.div 
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
                   viewport={{ once: true }}
-                  className="text-4xl md:text-5xl font-bold text-red-500 mb-4"
+                  className="text-4xl md:text-5xl font-bold mb-4"
+                  style={{color: '#3B82F6'}}
                 >
                   {stat.value}
                 </motion.div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <h3 className="text-xl font-semibold mb-3" style={{color: '#E2E8F0'}}>
                   {stat.label}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-sm leading-relaxed" style={{color: '#94A3B8'}}>
                   {stat.description}
                 </p>
               </motion.div>
@@ -145,10 +149,11 @@ const Solution = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+            className="text-4xl md:text-5xl font-bold mb-6"
+            style={{color: '#E2E8F0'}}
           >
             La Soluzione{' '}
-            <span className="text-green-500">NEXTBLOCK</span>
+            <span style={{color: '#3B82F6'}}>NEXTBLOCK</span>
           </motion.h2>
           
           <motion.p
@@ -156,7 +161,8 @@ const Solution = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-xl text-gray-600 mb-4 max-w-4xl mx-auto"
+            className="text-xl mb-4 max-w-4xl mx-auto"
+            style={{color: '#94A3B8'}}
           >
             La nostra missione è rivoluzionare il settore assicurativo attraverso la tokenizzazione.
           </motion.p>
@@ -166,7 +172,8 @@ const Solution = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
-            className="text-lg text-gray-600 max-w-4xl mx-auto"
+            className="text-lg max-w-4xl mx-auto"
+            style={{color: '#94A3B8'}}
           >
             Stiamo costruendo una piattaforma innovativa che democratizzerà l'accesso, 
             aumenterà la liquidità e porterà trasparenza nel mercato, trasformando radicalmente 

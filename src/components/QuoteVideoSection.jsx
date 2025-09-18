@@ -1,0 +1,48 @@
+import { motion } from 'framer-motion'
+
+const QuoteVideoSection = () => {
+  return (
+    <section className="py-20" style={{backgroundColor: '#0A192F'}}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Quote Text - Left Side */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center lg:text-left"
+          >
+            <blockquote className="text-3xl lg:text-4xl font-bold leading-tight" style={{color: '#E2E8F0'}}>
+              "Dove altri vedono caos, noi creiamo flussi. Dove altri temono la tempesta, noi costruiamo dighe che generano energia."
+            </blockquote>
+          </motion.div>
+
+          {/* Video - Right Side */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="relative"
+          >
+            <div className="relative rounded-lg overflow-hidden" style={{backgroundColor: '#1E293B', border: '1px solid #334155'}}>
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-auto aspect-video object-cover"
+              >
+                <source src="/nextblock-video.mp4" type="video/mp4" />
+                Il tuo browser non supporta il tag video.
+              </video>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default QuoteVideoSection

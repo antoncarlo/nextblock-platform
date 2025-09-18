@@ -52,7 +52,7 @@ const Hero = ({
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-900">
       {/* Video Background */}
       <div className="absolute inset-0">
         {/* World Rotating Video Background */}
@@ -67,7 +67,7 @@ const Hero = ({
         </video>
         
         {/* Very light overlay for text readability */}
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-black/20"></div>
       </div>
 
       {/* Content */}
@@ -82,14 +82,14 @@ const Hero = ({
           transition={{ duration: 1, delay: 0.2 }}
           className="mb-8"
         >
-          <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-white mb-4">
+          <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black text-slate-100 mb-4">
             <motion.span
               key={currentText}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              className="block bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent"
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+              className="block text-slate-100"
             >
               {heroTexts[currentText]}
             </motion.span>
@@ -98,22 +98,23 @@ const Hero = ({
 
         {/* Subtitle */}
         <motion.p
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
-          className="text-xl sm:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
+          transition={{ duration: 0.3, ease: "easeOut", delay: 0.1 }}
+          className="text-xl sm:text-2xl text-slate-400 mb-12 max-w-4xl mx-auto leading-relaxed"
         >
-          Democratizziamo il mercato assicurativo tradizionale aprendo una nuova frontiera. 
-          La nostra piattaforma trasforma{' '}
-          <span className="text-green-400 font-semibold">i rischi assicurativi in asset digitali</span>, 
-          permettendo a un mercato globale di investitori di finanziarli direttamente.
+          <span className="text-slate-100 font-semibold">Tokenizzazione Assicurativa Istituzionale</span>
+          <br />
+          Piattaforma per Investitori Qualificati che trasforma{' '}
+          <span className="text-blue-400 font-semibold">i rischi assicurativi in asset digitali</span>, 
+          garantendo conformità normativa e accesso controllato al mercato globale.
         </motion.p>
 
         {/* Feature Cards */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.6 }}
+          transition={{ duration: 0.3, ease: "easeOut", delay: 0.2 }}
           className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
         >
           {[
@@ -121,37 +122,37 @@ const Hero = ({
               icon: Shield,
               title: "Sicurezza Enterprise",
               description: "Protezione multi-livello e conformità normativa",
-              color: "from-blue-500 to-cyan-500"
+              color: "bg-blue-500"
             },
             {
               icon: TrendingUp,
-              title: "Rendimenti Elevati",
-              description: "14.2% rendimento medio annuo con diversificazione",
-              color: "from-green-500 to-emerald-500"
+              title: "Rendimenti Strutturati",
+              description: "Performance istituzionali con diversificazione controllata",
+              color: "bg-green-600"
             },
             {
               icon: Zap,
-              title: "Trading Ultra-Veloce",
-              description: "Esecuzione in microsecondi su HyperLiquid",
-              color: "from-purple-500 to-violet-500"
+              title: "Esecuzione Professionale",
+              description: "Infrastruttura di trading istituzionale su HyperLiquid",
+              color: "bg-blue-600"
             }
           ].map((feature, index) => (
             <motion.div
               key={feature.title}
               whileHover={{ 
-                scale: 1.05,
-                boxShadow: "0 20px 40px rgba(0,0,0,0.3)"
+                scale: 1.02,
+                transition: { duration: 0.2, ease: "easeOut" }
               }}
-              className="bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-6 group cursor-pointer"
-              initial={{ opacity: 0, y: 20 }}
+              className="bg-slate-800/30 border border-slate-700/30 rounded-lg p-6 group cursor-pointer transition-all duration-200 backdrop-blur-sm"
+              initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8 + index * 0.1 }}
+              transition={{ delay: 0.3 + index * 0.1, duration: 0.3, ease: "easeOut" }}
             >
-              <div className={`w-12 h-12 rounded-xl bg-gradient-to-r ${feature.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                <feature.icon className="w-6 h-6 text-white" />
+              <div className={`w-12 h-12 rounded-lg ${feature.color} flex items-center justify-center mb-4 transition-transform duration-200`}>
+                <feature.icon className="w-6 h-6 text-white" strokeWidth={1.5} />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">{feature.title}</h3>
-              <p className="text-gray-400 text-sm">{feature.description}</p>
+              <h3 className="text-lg font-semibold text-slate-100 mb-2">{feature.title}</h3>
+              <p className="text-slate-400 text-sm">{feature.description}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -163,26 +164,26 @@ const Hero = ({
             animate={{ opacity: 1, scale: 1 }}
             className="mb-8 flex items-center justify-center space-x-4"
           >
-            <div className="flex items-center space-x-2 bg-black/40 backdrop-blur-md border border-white/10 rounded-full px-4 py-2">
+            <div className="flex items-center space-x-2 bg-slate-800/80 border border-slate-700 rounded-full px-4 py-2">
               <div className={`w-3 h-3 rounded-full ${
-                chainId === 1 || chainId === 998 ? 'bg-green-500' : 'bg-yellow-500'
+                chainId === 1 || chainId === 998 ? 'bg-green-600' : 'bg-blue-500'
               } animate-pulse`} />
-              <span className="text-white text-sm font-medium">{networkName}</span>
+              <span className="text-slate-100 text-sm font-medium">{networkName}</span>
             </div>
           </motion.div>
         )}
 
         {/* CTA Buttons */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 }}
+          transition={{ duration: 0.3, ease: "easeOut", delay: 0.4 }}
           className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6"
         >
-          <Button
+          <button
             onClick={handleGetStarted}
             disabled={isConnecting}
-            className="group bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl disabled:opacity-50"
+            className="group bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-200 disabled:opacity-50"
           >
             {isConnecting ? (
               <>
@@ -200,49 +201,52 @@ const Hero = ({
                 Connect Wallet
               </>
             )}
-          </Button>
+          </button>
 
-          <Button
-            variant="outline"
-            className="border-white/20 text-white hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-xl backdrop-blur-md"
+          <button
+            className="border border-slate-600 text-slate-300 hover:bg-slate-800 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-200"
             onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Learn More
-          </Button>
+            Analisi Tecnica
+          </button>
         </motion.div>
 
         {/* Role Selection */}
         {isConnected && (
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            transition={{ duration: 0.3, ease: "easeOut", delay: 0.5 }}
             className="mt-12"
           >
-            <p className="text-green-400 font-medium mb-6 text-lg">
-              Wallet Connected! Choose your role:
+            <p className="text-blue-400 font-medium mb-6 text-lg">
+              Wallet Connesso! Seleziona il tuo profilo:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
               <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                whileHover={{ 
+                  transition: { duration: 0.2, ease: "easeOut" }
+                }}
+                whileTap={{ scale: 0.98 }}
                 onClick={() => handleRoleSelection('insurance')}
-                className="bg-gradient-to-r from-blue-600 to-purple-600 p-6 rounded-2xl text-white text-left group"
+                className="bg-slate-800 border border-slate-700 p-6 rounded-lg text-slate-100 text-left group hover:bg-slate-700 transition-all duration-200"
               >
-                <Shield className="w-8 h-8 mb-4 group-hover:scale-110 transition-transform" />
-                <h4 className="text-xl font-semibold mb-2">Insurance Company</h4>
-                <p className="text-blue-100">Tokenize your risk portfolios and access global capital</p>
+                <Shield className="w-8 h-8 mb-4 transition-transform duration-200" strokeWidth={1.5} />
+                <h4 className="text-xl font-semibold mb-2">Compagnia Assicurativa</h4>
+                <p className="text-slate-400">Tokenizza i tuoi portafogli di rischio e accedi al capitale globale</p>
               </motion.button>
 
               <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                whileHover={{ 
+                  transition: { duration: 0.2, ease: "easeOut" }
+                }}
+                whileTap={{ scale: 0.98 }}
                 onClick={() => handleRoleSelection('investor')}
-                className="bg-gradient-to-r from-green-600 to-emerald-600 p-6 rounded-2xl text-white text-left group"
+                className="bg-slate-800 border border-slate-700 p-6 rounded-lg text-slate-100 text-left group hover:bg-slate-700 transition-all duration-200"
               >
-                <TrendingUp className="w-8 h-8 mb-4 group-hover:scale-110 transition-transform" />
-                <h4 className="text-xl font-semibold mb-2">Investor</h4>
-                <p className="text-green-100">Invest in diversified insurance risk portfolios</p>
+                <TrendingUp className="w-8 h-8 mb-4 transition-transform duration-200" strokeWidth={1.5} />
+                <h4 className="text-xl font-semibold mb-2">Investitore Qualificato</h4>
+                <p className="text-slate-400">Accesso a portafogli di rischio assicurativo diversificati</p>
               </motion.button>
             </div>
           </motion.div>
@@ -252,18 +256,18 @@ const Hero = ({
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 2 }}
+          transition={{ delay: 0.6, duration: 0.3, ease: "easeOut" }}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         >
           <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center"
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className="w-6 h-10 border-2 border-slate-600 rounded-full flex justify-center"
           >
             <motion.div
               animate={{ y: [0, 12, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="w-1 h-3 bg-white/50 rounded-full mt-2"
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              className="w-1 h-3 bg-slate-400 rounded-full mt-2"
             />
           </motion.div>
         </motion.div>

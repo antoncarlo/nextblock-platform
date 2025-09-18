@@ -1,0 +1,37 @@
+/* NEXTBLOCK - NUOVA PALETTE OBBLIGATORIA */
+/* Colori esatti dalle specifiche del brand identity */
+
+:root {
+  /* Palette Obbligatoria */
+  --bg-primary: #0A192F;      /* Blu Notte - RGB(10, 25, 47) */
+  --bg-secondary: #1E293B;    /* Grigio Ardesia - RGB(30, 41, 59) */
+  --text-primary: #E2E8F0;    /* Grigio Chiaro - RGB(226, 232, 240) */
+  --text-secondary: #94A3B8;  /* Grigio Medio - RGB(148, 163, 184) */
+  --accent-primary: #3B82F6;  /* Blu Corporate - RGB(59, 130, 246) */
+  --accent-success: #059669;  /* Verde Foresta - RGB(5, 150, 105) */
+  --border-color: #334155;    /* Grigio Scuro - RGB(51, 65, 85) */
+}
+
+/* Classi Utility per applicazione immediata */
+.bg-nextblock-primary { background-color: #0A192F; }
+.bg-nextblock-secondary { background-color: #1E293B; }
+.text-nextblock-primary { color: #E2E8F0; }
+.text-nextblock-secondary { color: #94A3B8; }
+.text-nextblock-accent { color: #3B82F6; }
+.text-nextblock-success { color: #059669; }
+.border-nextblock { border-color: #334155; }
+
+/* Override Tailwind per conformità */
+.bg-slate-900 { background-color: #0A192F !important; }
+.bg-slate-800 { background-color: #1E293B !important; }
+.text-slate-100 { color: #E2E8F0 !important; }
+.text-slate-400 { color: #94A3B8 !important; }
+.text-blue-400 { color: #3B82F6 !important; }
+.text-blue-500 { color: #3B82F6 !important; }
+.text-blue-600 { color: #3B82F6 !important; }
+.bg-blue-600 { background-color: #3B82F6 !important; }
+.bg-blue-500 { background-color: #3B82F6 !important; }
+.text-green-600 { color: #059669 !important; }
+.bg-green-600 { background-color: #059669 !important; }
+.border-slate-700 { border-color: #334155 !important; }
+.border-slate-600 { border-color: #334155 !important; }

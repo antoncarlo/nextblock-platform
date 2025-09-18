@@ -36,7 +36,7 @@ const Navbar = ({
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -47,10 +47,10 @@ const Navbar = ({
             onClick={() => navigate('/')}
           >
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">N</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">
+              <span className="text-xl font-bold text-slate-100">
                 NEXTBLOCK
               </span>
             </div>
@@ -61,22 +61,26 @@ const Navbar = ({
             {/* Home Button - Show only when not on homepage */}
             {!isHomePage && (
               <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                whileHover={{ 
+                  transition: { duration: 0.2, ease: "easeOut" }
+                }}
+                whileTap={{ scale: 0.98 }}
                 onClick={() => navigate('/')}
-                className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors px-3 py-2 rounded-lg hover:bg-gray-100"
+                className="flex items-center space-x-2 text-slate-400 hover:text-slate-100 transition-colors duration-200 px-3 py-2 rounded-lg hover:bg-slate-800"
               >
-                <Home className="w-4 h-4" />
+                <Home className="w-4 h-4" strokeWidth={1.5} />
                 <span className="hidden sm:inline">Home</span>
               </motion.button>
             )}
 
             {/* Analytics Button */}
             <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{ 
+                transition: { duration: 0.2, ease: "easeOut" }
+              }}
+              whileTap={{ scale: 0.98 }}
               onClick={() => navigate('/analytics')}
-              className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
+              className="px-4 py-2 text-sm font-medium text-slate-300 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors duration-200"
             >
               Analytics
             </motion.button>
@@ -84,12 +88,14 @@ const Navbar = ({
             {/* Connectivity Test Button */}
             {onShowConnectivityTest && (
               <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                whileHover={{ 
+                  transition: { duration: 0.2, ease: "easeOut" }
+                }}
+                whileTap={{ scale: 0.98 }}
                 onClick={onShowConnectivityTest}
-                className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors flex items-center space-x-1"
+                className="px-4 py-2 text-sm font-medium text-slate-300 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors duration-200 flex items-center space-x-1"
               >
-                <Network className="w-4 h-4" />
+                <Network className="w-4 h-4" strokeWidth={1.5} />
                 <span className="hidden sm:inline">Test</span>
               </motion.button>
             )}
@@ -98,7 +104,7 @@ const Navbar = ({
             {isConnected && chainId && (
               <div className="flex items-center space-x-2">
                 <div className={`w-3 h-3 rounded-full ${getNetworkColor(chainId)}`}></div>
-                <span className="text-sm text-gray-600 hidden sm:inline">
+                <span className="text-sm text-slate-400 hidden sm:inline">
                   {networkName}
                 </span>
               </div>
@@ -108,25 +114,29 @@ const Navbar = ({
             {isConnected && (
               <div className="flex items-center space-x-2">
                 <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+                  whileHover={{ 
+                    transition: { duration: 0.2, ease: "easeOut" }
+                  }}
+                  whileTap={{ scale: 0.98 }}
                   onClick={onSwitchToEthereum}
-                  className={`px-3 py-1 text-xs font-medium rounded-md transition-colors ${
+                  className={`px-3 py-1 text-xs font-medium rounded-md transition-colors duration-200 ${
                     chainId === 1 || chainId === 11155111
-                      ? 'bg-blue-500 text-white'
-                      : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
                   }`}
                 >
                   ETH
                 </motion.button>
                 <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+                  whileHover={{ 
+                    transition: { duration: 0.2, ease: "easeOut" }
+                  }}
+                  whileTap={{ scale: 0.98 }}
                   onClick={onSwitchToHyperLiquid}
-                  className={`px-3 py-1 text-xs font-medium rounded-md transition-colors ${
+                  className={`px-3 py-1 text-xs font-medium rounded-md transition-colors duration-200 ${
                     chainId === 998 || chainId === 999
-                      ? 'bg-purple-500 text-white'
-                      : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
                   }`}
                 >
                   HL
@@ -137,30 +147,34 @@ const Navbar = ({
             {/* Wallet Connection */}
             {!isConnected ? (
               <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                whileHover={{ 
+                  transition: { duration: 0.2, ease: "easeOut" }
+                }}
+                whileTap={{ scale: 0.98 }}
                 onClick={onConnect}
                 disabled={isConnecting}
-                className="flex items-center space-x-2 bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-lg font-medium hover:from-green-500 hover:to-blue-600 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <Wallet className="w-4 h-4" />
-                <span>{isConnecting ? 'Connecting...' : 'Connect Wallet'}</span>
+                <Wallet className="w-4 h-4" strokeWidth={1.5} />
+                <span>{isConnecting ? 'Connessione...' : 'Connetti Wallet'}</span>
               </motion.button>
             ) : (
               <div className="flex items-center space-x-2">
-                <div className="flex items-center space-x-2 bg-gray-100 px-3 py-2 rounded-lg">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-sm font-medium text-gray-700">
+                <div className="flex items-center space-x-2 bg-slate-800 px-3 py-2 rounded-lg">
+                  <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <span className="text-sm font-medium text-slate-100">
                     {formatAddress(account)}
                   </span>
                 </div>
                 <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+                  whileHover={{ 
+                    transition: { duration: 0.2, ease: "easeOut" }
+                  }}
+                  whileTap={{ scale: 0.98 }}
                   onClick={onDisconnect}
-                  className="flex items-center space-x-1 text-gray-600 hover:text-red-600 transition-colors p-2 rounded-lg hover:bg-gray-100"
+                  className="flex items-center space-x-1 text-slate-400 hover:text-red-400 transition-colors duration-200 p-2 rounded-lg hover:bg-slate-800"
                 >
-                  <LogOut className="w-4 h-4" />
+                  <LogOut className="w-4 h-4" strokeWidth={1.5} />
                 </motion.button>
               </div>
             )}
@@ -170,15 +184,16 @@ const Navbar = ({
         {/* Error Message */}
         {error && (
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
+            initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className="bg-red-50 border border-red-200 text-red-700 px-4 py-2 rounded-lg text-sm flex items-center justify-between"
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            className="bg-red-900/20 border border-red-700 text-red-400 px-4 py-2 rounded-lg text-sm flex items-center justify-between"
           >
             <span>{error}</span>
             <button
               onClick={onClearError}
-              className="text-red-500 hover:text-red-700 ml-2"
+              className="text-red-400 hover:text-red-300 ml-2 transition-colors duration-200"
             >
               ×
             </button>

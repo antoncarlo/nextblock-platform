@@ -26,7 +26,7 @@ const Alliances = () => {
   ]
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20" style={{backgroundColor: '#0A192F'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -36,10 +36,10 @@ const Alliances = () => {
           className="text-center mb-16"
         >
           <div className="flex items-center justify-center mb-6">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-              Our Alliances
+            <h2 className="text-4xl md:text-5xl font-bold" style={{color: '#E2E8F0'}}>
+              Partnership Strategiche
             </h2>
-            <ArrowUpRight className="w-8 h-8 text-green-500 ml-4" />
+            <ArrowUpRight className="w-8 h-8 ml-4" style={{color: '#3B82F6'}} strokeWidth={1.5} />
           </div>
         </motion.div>
 
@@ -51,29 +51,31 @@ const Alliances = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow"
+              className="rounded-lg p-8 transition-all duration-200" 
+              style={{backgroundColor: '#1E293B', borderColor: '#334155', border: '1px solid'}}
             >
               <div className="flex flex-col items-center text-center">
                 <div className="w-16 h-16 mb-4 flex items-center justify-center">
                   <img 
                     src={partner.logo} 
                     alt={partner.name}
-                    className="max-w-full max-h-full object-contain"
+                    className="max-w-full max-h-full object-contain filter brightness-0 invert"
                     onError={(e) => {
                       e.target.style.display = 'none'
                       e.target.nextSibling.style.display = 'flex'
                     }}
                   />
                   <div 
-                    className="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center text-gray-600 font-semibold text-sm hidden"
+                    className="w-16 h-16 rounded-lg flex items-center justify-center font-semibold text-sm hidden"
+                    style={{backgroundColor: '#334155', color: '#E2E8F0'}}
                   >
                     {partner.name.slice(0, 2).toUpperCase()}
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold mb-2" style={{color: '#E2E8F0'}}>
                   {partner.name}
                 </h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-sm" style={{color: '#94A3B8'}}>
                   {partner.description}
                 </p>
               </div>

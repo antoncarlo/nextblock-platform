@@ -226,75 +226,7 @@ const Roadmap = () => {
           </div>
         </div>
 
-        {/* Fundraising Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="mt-20 bg-gradient-to-r from-blue-600 to-purple-700 rounded-3xl p-12 text-white text-center"
-        >
-          <motion.h3
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold mb-6"
-          >
-            Fundraising: We Need to Move Quickly
-          </motion.h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm"
-            >
-              <div className="text-3xl font-bold text-green-300 mb-2">$2M</div>
-              <div className="text-lg font-semibold mb-2">Target Funding</div>
-              <div className="text-sm text-blue-200">Pre-Seed Round</div>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true }}
-              className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm"
-            >
-              <div className="text-3xl font-bold text-green-300 mb-2">$15M</div>
-              <div className="text-lg font-semibold mb-2">Valuation Cap</div>
-              <div className="text-sm text-blue-200">Company Valuation</div>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              viewport={{ once: true }}
-              className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm"
-            >
-              <div className="text-3xl font-bold text-green-300 mb-2">10%</div>
-              <div className="text-lg font-semibold mb-2">Discount</div>
-              <div className="text-sm text-blue-200">Early Investor Bonus</div>
-            </motion.div>
-          </div>
-          
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            viewport={{ once: true }}
-            className="text-lg leading-relaxed max-w-4xl mx-auto"
-          >
-            Stiamo aprendo il nostro primo round agli investitori. Tutto il funding, testing e 
-            validazione del mercato finora è stato bootstrapped. Il nostro obiettivo con questo 
-            round: portare il team full-time per accelerare lo sviluppo e firmare con 4 compagnie 
-            assicurative prima del Q2 2026.
-          </motion.p>
-        </motion.div>
+
       </div>
     </section>
   )
