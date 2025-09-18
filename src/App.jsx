@@ -5,6 +5,7 @@ import './App.css'
 // Landing Page Components
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import ConnectivityTestPanel from './components/ConnectivityTestPanel'
 import Alliances from './components/Alliances'
 import Solution from './components/Solution'
 import Features from './components/Features'
@@ -40,6 +41,7 @@ function App() {
   } = useWallet()
 
   const [userRole, setUserRole] = useState(null) // 'insurance' or 'investor'
+  const [showConnectivityTest, setShowConnectivityTest] = useState(false)
 
   // Set user role
   const selectRole = (role) => {
@@ -70,6 +72,7 @@ function App() {
         isConnecting={isConnecting}
         error={error}
         onClearError={clearError}
+        onShowConnectivityTest={() => setShowConnectivityTest(true)}
       />
       <Hero 
         onConnect={connectWallet} 
@@ -78,6 +81,7 @@ function App() {
         onSelectRole={selectRole}
         chainId={chainId}
         networkName={networkName}
+        onShowConnectivityTest={() => setShowConnectivityTest(true)}
       />
       <Alliances />
       <Solution />
@@ -227,6 +231,12 @@ function App() {
           {/* Catch all route */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
+        
+        {/* Connectivity Test Panel */}
+        <ConnectivityTestPanel 
+          isOpen={showConnectivityTest}
+          onClose={() => setShowConnectivityTest(false)}
+        />
       </div>
     </Router>
   )

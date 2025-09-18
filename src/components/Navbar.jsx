@@ -13,7 +13,8 @@ const Navbar = ({
   onSwitchToHyperLiquid,
   isConnecting,
   error,
-  onClearError
+  onClearError,
+  onShowConnectivityTest
 }) => {
   const navigate = useNavigate()
   const location = useLocation()
@@ -79,6 +80,19 @@ const Navbar = ({
             >
               Analytics
             </motion.button>
+
+            {/* Connectivity Test Button */}
+            {onShowConnectivityTest && (
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={onShowConnectivityTest}
+                className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors flex items-center space-x-1"
+              >
+                <Network className="w-4 h-4" />
+                <span className="hidden sm:inline">Test</span>
+              </motion.button>
+            )}
 
             {/* Network Indicator */}
             {isConnected && chainId && (
