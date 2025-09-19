@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { ArrowRight, Shield, TrendingUp, Zap, Globe, Lock } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const Hero = ({ 
   onConnect, 
@@ -12,6 +13,7 @@ const Hero = ({
   chainId, 
   networkName 
 }) => {
+  const { t } = useTranslation()
   const [currentText, setCurrentText] = useState(0)
   const { scrollY } = useScroll()
   const navigate = useNavigate()
@@ -103,11 +105,10 @@ const Hero = ({
           transition={{ duration: 0.3, ease: "easeOut", delay: 0.1 }}
           className="text-xl sm:text-2xl text-slate-400 mb-12 max-w-4xl mx-auto leading-relaxed"
         >
-          <span className="text-slate-100 font-semibold">Tokenizzazione Assicurativa Istituzionale</span>
+          <span className="text-slate-100 font-semibold">{t('hero.title')}</span>
           <br />
-          Piattaforma per Investitori Qualificati che trasforma{' '}
-          <span className="text-blue-400 font-semibold">i rischi assicurativi in asset digitali</span>, 
-          garantendo conformità normativa e accesso controllato al mercato globale.
+          {t('hero.subtitle')} {' '}
+          <span className="text-blue-400 font-semibold">{t('hero.description')}</span>
         </motion.p>
 
         {/* Feature Cards */}
@@ -120,20 +121,20 @@ const Hero = ({
           {[
             {
               icon: Shield,
-              title: "Sicurezza Enterprise",
-              description: "Protezione multi-livello e conformità normativa",
+              title: t('hero.features.enterpriseSecurity.title'),
+              description: t('hero.features.enterpriseSecurity.description'),
               color: "bg-blue-500"
             },
             {
               icon: TrendingUp,
-              title: "Rendimenti Strutturati",
-              description: "Performance istituzionali con diversificazione controllata",
+              title: t('hero.features.highReturns.title'),
+              description: t('hero.features.highReturns.description'),
               color: "bg-green-600"
             },
             {
               icon: Zap,
-              title: "Esecuzione Professionale",
-              description: "Infrastruttura di trading istituzionale su HyperLiquid",
+              title: t('hero.features.ultraFastExecution.title'),
+              description: t('hero.features.ultraFastExecution.description'),
               color: "bg-blue-600"
             }
           ].map((feature, index) => (

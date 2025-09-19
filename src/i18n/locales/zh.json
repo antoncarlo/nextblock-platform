@@ -1,0 +1,199 @@
+{
+  "navbar": {
+    "analytics": "分析",
+    "test": "测试",
+    "connectWallet": "连接钱包",
+    "disconnect": "断开连接",
+    "switchToEthereum": "切换到以太坊",
+    "switchToHyperLiquid": "切换到HyperLiquid",
+    "metamaskNotInstalled": "未安装MetaMask",
+    "close": "关闭"
+  },
+  "hero": {
+    "title": "机构保险代币化",
+    "subtitle": "合格投资者平台",
+    "description": "将保险风险转化为流动数字资产，具备机构级安全性和HyperLiquid上的超快交易。",
+    "getStarted": "开始使用",
+    "learnMore": "了解更多",
+    "selectRole": "选择您的角色",
+    "insuranceCompany": "保险公司",
+    "qualifiedInvestor": "合格投资者",
+    "enterNextblock": "进入NEXTBLOCK",
+    "features": {
+      "enterpriseSecurity": {
+        "title": "企业级安全",
+        "description": "银行级基础设施，符合机构合规要求"
+      },
+      "highReturns": {
+        "title": "高收益",
+        "description": "平均年收益率14.2%，风险敞口多样化"
+      },
+      "ultraFastExecution": {
+        "title": "超快执行",
+        "description": "HyperLiquid上的微秒级交易基础设施"
+      }
+    },
+    "networkStatus": "网络状态",
+    "scrollToExplore": "滚动探索"
+  },
+  "alliances": {
+    "title": "战略合作伙伴",
+    "partnerships": {
+      "hyperliquid": "超快DEX集成",
+      "chainlink": "可靠的价格预言机",
+      "circle": "USDC稳定币基础设施",
+      "polygon": "可扩展的区块链解决方案"
+    }
+  },
+  "solution": {
+    "problemTitle": "传统市场问题",
+    "problemDescription": "容量有限 - 1240亿美元的错失机会\n流程缓慢 - 20%的不必要成本\n资产锁定 - 零流动性",
+    "stats": {
+      "insuranceMarket": "保险市场",
+      "missedOpportunities": "错失机会",
+      "inefficiencyCosts": "低效成本"
+    },
+    "solutionTitle": "NEXTBLOCK改变保险代币化",
+    "solutionDescription": "我们为保险风险创建流动市场，实现即时结算、部分所有权和全球访问以前非流动性资产。",
+    "benefits": "我们的平台将结算时间从30-90天减少到24-48小时，同时将交易成本降低60-80%。"
+  },
+  "features": {
+    "title": "安全快速平台",
+    "subtitle": "具备机构标准的保险代币化企业技术。",
+    "items": {
+      "bankingSecurity": {
+        "title": "银行级安全",
+        "description": "多重签名，95%冷存储，持续审计"
+      },
+      "trading247": {
+        "title": "24/7交易",
+        "description": "T+0结算，<0.5%价差，保证流动性"
+      },
+      "globalAccess": {
+        "title": "全球访问",
+        "description": "简单KYC，无地理障碍"
+      },
+      "totalTransparency": {
+        "title": "完全透明",
+        "description": "实时仪表板，风险指标，自动报告"
+      }
+    }
+  },
+  "ceo": {
+    "title": "领导团队",
+    "name": "马可·桑托里",
+    "position": "首席执行官兼创始人",
+    "description": "前Kraken和区块链协会首席法务官。数字资产监管和机构采用专家。",
+    "quote": "我们正在为下一代金融市场构建基础设施。"
+  },
+  "roadmap": {
+    "title": "发展路线图",
+    "phases": {
+      "q1_2025": {
+        "title": "2025年第一季度 - 基础",
+        "items": [
+          "智能合约部署",
+          "安全审计完成",
+          "测试版平台发布"
+        ]
+      },
+      "q2_2025": {
+        "title": "2025年第二季度 - 合作伙伴",
+        "items": [
+          "首批保险公司合作伙伴",
+          "机构投资者入驻",
+          "监管合规认证"
+        ]
+      },
+      "q3_2025": {
+        "title": "2025年第三季度 - 扩展",
+        "items": [
+          "多链集成",
+          "高级分析仪表板",
+          "移动应用发布"
+        ]
+      },
+      "q4_2025": {
+        "title": "2025年第四季度 - 规模化",
+        "items": [
+          "全球市场扩张",
+          "AI驱动的风险评估",
+          "机构交易工具"
+        ]
+      }
+    }
+  },
+  "quote": {
+    "title": "我们控制市场混乱",
+    "description": "就像大坝平息汹涌的水流一样，NextBlock将保险混乱转化为受控的流动性流。",
+    "quote": "别人看到混乱的地方，我们创造价值。"
+  },
+  "footer": {
+    "description": "面向合格投资者的机构保险代币化平台。",
+    "quickLinks": "快速链接",
+    "platform": "平台",
+    "documentation": "文档",
+    "support": "支持",
+    "legal": "法律",
+    "company": "公司",
+    "about": "关于",
+    "careers": "职业",
+    "blog": "博客",
+    "contact": "联系",
+    "connect": "连接",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款",
+    "riskDisclosure": "风险披露",
+    "allRightsReserved": "版权所有。",
+    "email": "next.block@insurer.com"
+  },
+  "dashboard": {
+    "welcome": "欢迎来到NEXTBLOCK",
+    "chooseRole": "选择您的角色以访问平台",
+    "insurancePortal": "保险门户",
+    "investorDashboard": "投资者仪表板",
+    "totalValue": "总价值",
+    "activeTokens": "活跃代币",
+    "monthlyReturn": "月收益",
+    "riskScore": "风险评分",
+    "quickActions": "快速操作",
+    "createToken": "创建代币",
+    "manageRisks": "管理风险",
+    "viewAnalytics": "查看分析",
+    "buyTokens": "购买代币",
+    "portfolio": "投资组合",
+    "trading": "交易"
+  },
+  "portfolio": {
+    "title": "投资组合概览",
+    "totalBalance": "总余额",
+    "networks": "网络",
+    "assets": "资产",
+    "quickActions": "快速操作",
+    "buy": "购买",
+    "trade": "交易",
+    "stake": "质押",
+    "switchNetwork": "切换网络",
+    "connectWallet": "连接钱包",
+    "noWalletConnected": "未连接钱包"
+  },
+  "connectivity": {
+    "title": "多链连接测试",
+    "subtitle": "区块链连接和钱包功能的综合测试套件",
+    "runAllTests": "运行所有测试",
+    "testResults": "测试结果",
+    "tests": {
+      "walletConnection": "钱包连接测试",
+      "rpcConnectivity": "RPC连接测试",
+      "balanceRetrieval": "余额检索测试",
+      "networkSwitching": "网络切换测试",
+      "transactionCapabilities": "交易能力测试"
+    },
+    "status": {
+      "running": "运行中...",
+      "passed": "通过",
+      "failed": "失败",
+      "pending": "待处理"
+    }
+  }
+}

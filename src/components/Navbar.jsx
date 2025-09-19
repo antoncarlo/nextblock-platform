@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { Wallet, LogOut, Home, Network } from 'lucide-react'
 import { useNavigate, useLocation } from 'react-router-dom'
+import LanguageSelector from './LanguageSelector'
 
 const Navbar = ({ 
   isConnected, 
@@ -16,6 +19,7 @@ const Navbar = ({
   onClearError,
   onShowConnectivityTest
 }) => {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const location = useLocation()
   const isHomePage = location.pathname === '/'
@@ -140,6 +144,9 @@ const Navbar = ({
                 </motion.button>
               </div>
             )}
+
+            {/* Language Selector */}
+            <LanguageSelector />
 
             {/* Wallet Connection */}
             {!isConnected ? (

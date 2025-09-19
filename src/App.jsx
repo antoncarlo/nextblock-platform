@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import './App.css'
 import './styles/brand-identity.css'
 import './styles/nextblock-palette.css'
+import './i18n'
 
 // Landing Page Components
 import Navbar from './components/Navbar'

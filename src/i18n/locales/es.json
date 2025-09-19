@@ -1,0 +1,199 @@
+{
+  "navbar": {
+    "analytics": "Analytics",
+    "test": "Test",
+    "connectWallet": "Conectar Wallet",
+    "disconnect": "Desconectar",
+    "switchToEthereum": "Cambiar a Ethereum",
+    "switchToHyperLiquid": "Cambiar a HyperLiquid",
+    "metamaskNotInstalled": "MetaMask no está instalado",
+    "close": "Cerrar"
+  },
+  "hero": {
+    "title": "Tokenización de Seguros Institucional",
+    "subtitle": "Plataforma para Inversores Cualificados",
+    "description": "Transforma riesgos de seguros en activos digitales líquidos con seguridad de grado institucional y trading ultra-rápido en HyperLiquid.",
+    "getStarted": "Comenzar",
+    "learnMore": "Saber Más",
+    "selectRole": "Selecciona Tu Rol",
+    "insuranceCompany": "Compañía de Seguros",
+    "qualifiedInvestor": "Inversor Cualificado",
+    "enterNextblock": "Entrar a NEXTBLOCK",
+    "features": {
+      "enterpriseSecurity": {
+        "title": "Seguridad Empresarial",
+        "description": "Infraestructura de grado bancario con cumplimiento institucional"
+      },
+      "highReturns": {
+        "title": "Altos Rendimientos",
+        "description": "14.2% de rendimientos anuales promedio con exposición diversificada al riesgo"
+      },
+      "ultraFastExecution": {
+        "title": "Ejecución Ultra-Rápida",
+        "description": "Infraestructura de trading en microsegundos en HyperLiquid"
+      }
+    },
+    "networkStatus": "Estado de la Red",
+    "scrollToExplore": "Desplázate para explorar"
+  },
+  "alliances": {
+    "title": "Alianzas Estratégicas",
+    "partnerships": {
+      "hyperliquid": "Integración DEX ultra-rápida",
+      "chainlink": "Oráculos de precios confiables",
+      "circle": "Infraestructura de stablecoin USDC",
+      "polygon": "Soluciones blockchain escalables"
+    }
+  },
+  "solution": {
+    "problemTitle": "Problemas del Mercado Tradicional",
+    "problemDescription": "Capacidad Limitada - $124B en oportunidades perdidas\nProcesos Lentos - 20% de costos innecesarios\nActivos Bloqueados - Cero liquidez",
+    "stats": {
+      "insuranceMarket": "Mercado de Seguros",
+      "missedOpportunities": "Oportunidades Perdidas",
+      "inefficiencyCosts": "Costos de Ineficiencia"
+    },
+    "solutionTitle": "NEXTBLOCK transforma la tokenización de seguros",
+    "solutionDescription": "Creamos mercados líquidos para riesgos de seguros, habilitando liquidación instantánea, propiedad fraccionaria y acceso global a activos previamente ilíquidos.",
+    "benefits": "Nuestra plataforma reduce los tiempos de liquidación de 30-90 días a 24-48 horas mientras reduce los costos de transacción en 60-80%."
+  },
+  "features": {
+    "title": "Plataforma Segura y Rápida",
+    "subtitle": "Tecnología empresarial para tokenización de seguros con estándares institucionales.",
+    "items": {
+      "bankingSecurity": {
+        "title": "Seguridad Bancaria",
+        "description": "Multi-firma, almacenamiento en frío 95%, auditorías continuas"
+      },
+      "trading247": {
+        "title": "Trading 24/7",
+        "description": "Liquidación T+0, spreads <0.5%, liquidez garantizada"
+      },
+      "globalAccess": {
+        "title": "Acceso Global",
+        "description": "KYC simple, sin barreras geográficas"
+      },
+      "totalTransparency": {
+        "title": "Transparencia Total",
+        "description": "Dashboard en tiempo real, métricas de riesgo, reportes automatizados"
+      }
+    }
+  },
+  "ceo": {
+    "title": "Equipo de Liderazgo",
+    "name": "Marco Santori",
+    "position": "CEO y Fundador",
+    "description": "Ex Director Legal de Kraken y Blockchain Association. Experto en regulación de activos digitales y adopción institucional.",
+    "quote": "Estamos construyendo la infraestructura para la próxima generación de mercados financieros."
+  },
+  "roadmap": {
+    "title": "Hoja de Ruta de Desarrollo",
+    "phases": {
+      "q1_2025": {
+        "title": "Q1 2025 - Fundación",
+        "items": [
+          "Despliegue de contratos inteligentes",
+          "Finalización de auditorías de seguridad",
+          "Lanzamiento de plataforma beta"
+        ]
+      },
+      "q2_2025": {
+        "title": "Q2 2025 - Alianzas",
+        "items": [
+          "Primeras alianzas con compañías de seguros",
+          "Incorporación de inversores institucionales",
+          "Certificación de cumplimiento regulatorio"
+        ]
+      },
+      "q3_2025": {
+        "title": "Q3 2025 - Expansión",
+        "items": [
+          "Integración multi-cadena",
+          "Dashboard de analytics avanzado",
+          "Lanzamiento de aplicación móvil"
+        ]
+      },
+      "q4_2025": {
+        "title": "Q4 2025 - Escala",
+        "items": [
+          "Expansión del mercado global",
+          "Evaluación de riesgo impulsada por IA",
+          "Herramientas de trading institucional"
+        ]
+      }
+    }
+  },
+  "quote": {
+    "title": "Controlamos el Caos del Mercado",
+    "description": "Como una presa calma las aguas turbulentas, NextBlock transforma el caos de seguros en flujos controlados de liquidez.",
+    "quote": "Donde otros ven caos, nosotros creamos valor."
+  },
+  "footer": {
+    "description": "Plataforma de tokenización de seguros institucional para inversores cualificados.",
+    "quickLinks": "Enlaces Rápidos",
+    "platform": "Plataforma",
+    "documentation": "Documentación",
+    "support": "Soporte",
+    "legal": "Legal",
+    "company": "Empresa",
+    "about": "Acerca de",
+    "careers": "Carreras",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "connect": "Conectar",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "riskDisclosure": "Divulgación de Riesgos",
+    "allRightsReserved": "Todos los derechos reservados.",
+    "email": "next.block@insurer.com"
+  },
+  "dashboard": {
+    "welcome": "Bienvenido a NEXTBLOCK",
+    "chooseRole": "Elige tu rol para acceder a la plataforma",
+    "insurancePortal": "Portal de Seguros",
+    "investorDashboard": "Dashboard de Inversor",
+    "totalValue": "Valor Total",
+    "activeTokens": "Tokens Activos",
+    "monthlyReturn": "Retorno Mensual",
+    "riskScore": "Puntuación de Riesgo",
+    "quickActions": "Acciones Rápidas",
+    "createToken": "Crear Token",
+    "manageRisks": "Gestionar Riesgos",
+    "viewAnalytics": "Ver Analytics",
+    "buyTokens": "Comprar Tokens",
+    "portfolio": "Portafolio",
+    "trading": "Trading"
+  },
+  "portfolio": {
+    "title": "Resumen del Portafolio",
+    "totalBalance": "Saldo Total",
+    "networks": "Redes",
+    "assets": "Activos",
+    "quickActions": "Acciones Rápidas",
+    "buy": "Comprar",
+    "trade": "Intercambiar",
+    "stake": "Stake",
+    "switchNetwork": "Cambiar Red",
+    "connectWallet": "Conectar Wallet",
+    "noWalletConnected": "No hay wallet conectado"
+  },
+  "connectivity": {
+    "title": "Test de Conectividad Multi-Cadena",
+    "subtitle": "Suite de pruebas integral para conectividad blockchain y funcionalidad de wallet",
+    "runAllTests": "Ejecutar Todas las Pruebas",
+    "testResults": "Resultados de Pruebas",
+    "tests": {
+      "walletConnection": "Test de Conexión de Wallet",
+      "rpcConnectivity": "Test de Conectividad RPC",
+      "balanceRetrieval": "Test de Recuperación de Saldos",
+      "networkSwitching": "Test de Cambio de Red",
+      "transactionCapabilities": "Test de Capacidades de Transacción"
+    },
+    "status": {
+      "running": "Ejecutando...",
+      "passed": "Aprobado",
+      "failed": "Fallido",
+      "pending": "Pendiente"
+    }
+  }
+}
