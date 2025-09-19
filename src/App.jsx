@@ -27,6 +27,12 @@ import TokenizeRisk from './components/TokenizeRisk'
 import Marketplace from './components/Marketplace'
 import Portfolio from './components/Portfolio'
 
+// Financial Infrastructure Components
+import FiatGateway from './components/FiatGateway'
+import FireblocksCustody from './components/FireblocksCustody'
+import ComplianceFramework from './components/ComplianceFramework'
+import TreasuryManagement from './components/TreasuryManagement'
+
 // Custom hook for wallet management
 import { useWallet } from './useWallet'
 
@@ -232,6 +238,27 @@ function App() {
                 <Navigate to="/" replace />
               )
             } 
+          />
+          
+          {/* Financial Infrastructure Routes */}
+          <Route 
+            path="/fiat-gateway" 
+            element={<FiatGateway />} 
+          />
+          
+          <Route 
+            path="/custody" 
+            element={<FireblocksCustody />} 
+          />
+          
+          <Route 
+            path="/compliance" 
+            element={<ComplianceFramework />} 
+          />
+          
+          <Route 
+            path="/treasury" 
+            element={<TreasuryManagement />} 
           />
           
           {/* Catch all route */}

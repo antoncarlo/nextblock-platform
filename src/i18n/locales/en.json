@@ -195,5 +195,163 @@
       "failed": "Failed",
       "pending": "Pending"
     }
+  },
+  "fiatGateway": {
+    "title": "Fiat Gateway",
+    "subtitle": "Convert traditional currency to USDC seamlessly for institutional investments",
+    "form": {
+      "title": "Investment Details",
+      "currency": "Select Currency",
+      "amount": "Investment Amount",
+      "minimumAmount": "Minimum investment",
+      "paymentMethod": "Payment Method",
+      "processingTime": "Processing Time",
+      "fees": "Fees",
+      "invest": "Proceed to Investment",
+      "processing": "Processing..."
+    },
+    "paymentMethods": {
+      "bankTransfer": "Bank Transfer",
+      "bankTransferDesc": "Standard SEPA transfer for European investors",
+      "sepaInstant": "SEPA Instant",
+      "sepaInstantDesc": "Instant settlement for immediate investment",
+      "wireTransfer": "Wire Transfer",
+      "wireTransferDesc": "International wire transfer for global investors"
+    },
+    "security": {
+      "title": "Security & Compliance",
+      "circleRegulated": "Circle regulated by US and EU authorities",
+      "institutionalGrade": "Institutional-grade custody and settlement",
+      "segregatedFunds": "Client funds segregated and protected",
+      "fullCompliance": "Full KYC/AML compliance framework"
+    },
+    "process": {
+      "title": "Investment Process",
+      "step1": {
+        "title": "Complete KYC Verification",
+        "description": "Institutional investor verification and compliance checks"
+      },
+      "step2": {
+        "title": "Select Investment Amount",
+        "description": "Choose currency and amount (minimum €100,000)"
+      },
+      "step3": {
+        "title": "Fiat to USDC Conversion",
+        "description": "Automatic conversion through Circle Mint infrastructure"
+      },
+      "step4": {
+        "title": "Portfolio Token Allocation",
+        "description": "Receive tokenized insurance portfolio shares"
+      }
+    },
+    "support": {
+      "title": "Need Assistance?",
+      "description": "Our institutional support team is available 24/7 for qualified investors",
+      "contact": "Contact Support"
+    },
+    "kyc": {
+      "verified": "KYC Verified - Ready to invest",
+      "pending": "KYC Verification Pending",
+      "required": "KYC Verification Required"
+    },
+    "errors": {
+      "minimumAmount": "Minimum investment amount is €100,000",
+      "kycRequired": "KYC verification required before investing",
+      "paymentFailed": "Payment processing failed. Please try again."
+    }
+  },
+  "custody": {
+    "title": "Institutional Custody",
+    "subtitle": "Enterprise-grade digital asset custody powered by Fireblocks technology",
+    "loading": "Loading custody data...",
+    "security": {
+      "status": "All Systems Secure",
+      "description": "Multi-signature wallets and cold storage protection active",
+      "totalAssets": "Total Assets Under Custody"
+    },
+    "wallets": {
+      "title": "Custody Wallets"
+    },
+    "wallet": {
+      "balance": "Balance",
+      "security": "Security Level",
+      "lastActivity": "Last Activity"
+    },
+    "transactions": {
+      "title": "Recent Transactions"
+    },
+    "features": {
+      "multiSig": {
+        "title": "Multi-Signature Security",
+        "description": "3-of-5 signature requirement for all transactions"
+      },
+      "coldStorage": {
+        "title": "Cold Storage",
+        "description": "Offline storage for maximum security"
+      },
+      "realTime": {
+        "title": "Real-Time Monitoring",
+        "description": "24/7 transaction monitoring and alerts"
+      },
+      "compliance": {
+        "title": "Regulatory Compliance",
+        "description": "Full audit trail and regulatory reporting"
+      }
+    }
+  },
+  "compliance": {
+    "title": "Compliance Framework",
+    "subtitle": "Comprehensive KYC/AML and regulatory compliance for institutional investors",
+    "loading": "Loading compliance data...",
+    "metrics": {
+      "complianceScore": "Compliance Score",
+      "pendingApplications": "Pending Applications",
+      "averageProcessingTime": "Avg Processing Time",
+      "amlAlerts": "AML Alerts This Month"
+    },
+    "tabs": {
+      "kyc": "KYC Applications",
+      "aml": "AML Monitoring", 
+      "audit": "Audit Trail",
+      "reports": "Compliance Reports"
+    },
+    "kyc": {
+      "title": "KYC Applications"
+    },
+    "aml": {
+      "title": "AML Monitoring"
+    },
+    "audit": {
+      "title": "Audit Trail"
+    },
+    "reports": {
+      "title": "Compliance Reports"
+    }
+  },
+  "treasury": {
+    "title": "Treasury Management",
+    "subtitle": "Multi-currency portfolio management and analytics for institutional assets",
+    "loading": "Loading treasury data...",
+    "metrics": {
+      "totalAUM": "Total AUM",
+      "weeklyReturn": "Weekly Return",
+      "diversification": "Multi-Currency",
+      "complianceScore": "Compliance"
+    },
+    "performance": {
+      "title": "Portfolio Performance"
+    },
+    "allocation": {
+      "title": "Asset Allocation"
+    },
+    "currencies": {
+      "title": "Currency Breakdown"
+    },
+    "portfolios": {
+      "title": "Portfolio Details"
+    },
+    "transactions": {
+      "title": "Recent Transactions"
+    }
   }
 }
