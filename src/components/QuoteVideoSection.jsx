@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 const QuoteVideoSection = () => {
+  const { t } = useTranslation()
   return (
     <section className="py-20" style={{backgroundColor: '#0A192F'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,19 +17,18 @@ const QuoteVideoSection = () => {
           >
             {/* Titolo */}
             <h2 className="text-3xl lg:text-4xl font-bold" style={{color: '#E2E8F0'}}>
-              Controlliamo il Caos del Mercato
+              {t('quote.title')}
             </h2>
             
             {/* Descrizione */}
             <p className="text-lg lg:text-xl leading-relaxed" style={{color: '#94A3B8'}}>
-              Come una diga calma le acque in piena, NextBlock trasforma 
-              il caos assicurativo in flussi controllati di liquidità.
+              {t('quote.description')}
             </p>
             
             {/* Quote */}
             <blockquote className="text-2xl lg:text-3xl font-bold italic border-l-4 pl-6" 
               style={{color: '#3B82F6', borderColor: '#3B82F6'}}>
-              "Dove altri vedono caos, noi creiamo valore."
+              {t('quote.quote')}
             </blockquote>
           </motion.div>
 

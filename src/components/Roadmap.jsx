@@ -1,8 +1,10 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 import { Calendar, Target, Users, Rocket, Building, TrendingUp, Smartphone, BarChart3 } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 const Roadmap = () => {
+  const { t } = useTranslation()
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -13,44 +15,36 @@ const Roadmap = () => {
 
   const roadmapItems = [
     {
-      quarter: "Q3 2025",
-      title: "Costituzione Company",
-      description: "Inizio sviluppo e Pre-seed 1.5M",
+      quarter: "Q1 2025",
+      title: t('roadmap.phases.q1_2025.title'),
+      description: Array.isArray(t('roadmap.phases.q1_2025.items')) ? t('roadmap.phases.q1_2025.items').join(', ') : t('roadmap.phases.q1_2025.items'),
       icon: Building,
       color: "bg-blue-500",
       status: "completed"
     },
     {
-      quarter: "Q1 2026",
-      title: "Rilascio Piattaforma MVP",
-      description: "Funzionalità base per prime tokenizzazioni, test dei primi portafogli, rilascio dashboard utente",
+      quarter: "Q2 2025",
+      title: t('roadmap.phases.q2_2025.title'),
+      description: Array.isArray(t('roadmap.phases.q2_2025.items')) ? t('roadmap.phases.q2_2025.items').join(', ') : t('roadmap.phases.q2_2025.items'),
       icon: Rocket,
       color: "bg-green-500",
       status: "in-progress"
     },
     {
-      quarter: "Q2 2026",
-      title: "Tokenizzazione Aperta",
-      description: "Inizio tokenizzazione aperta a tutti gli utenti, partnership con realtà del settore",
+      quarter: "Q3 2025",
+      title: t('roadmap.phases.q3_2025.title'),
+      description: Array.isArray(t('roadmap.phases.q3_2025.items')) ? t('roadmap.phases.q3_2025.items').join(', ') : t('roadmap.phases.q3_2025.items'),
       icon: Users,
       color: "bg-purple-500",
       status: "upcoming"
     },
     {
-      quarter: "Q3 2026",
-      title: "Espansione Prodotti",
-      description: "Espansione a portafogli nei rami Danni e Vita, collaborazione diretta con Riassicurazione",
+      quarter: "Q4 2025",
+      title: t('roadmap.phases.q4_2025.title'),
+      description: Array.isArray(t('roadmap.phases.q4_2025.items')) ? t('roadmap.phases.q4_2025.items').join(', ') : t('roadmap.phases.q4_2025.items'),
       icon: TrendingUp,
       color: "bg-orange-500",
       status: "upcoming"
-    },
-    {
-      quarter: "Q1 2027",
-      title: "Diversificazione Mercato",
-      description: "Espansione societaria nel mercato della tokenizzazione nei crediti di carbonio e energie rinnovabili",
-      icon: Target,
-      color: "bg-emerald-500",
-      status: "future"
     }
   ]
 
@@ -92,8 +86,7 @@ const Roadmap = () => {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
           >
-            2025-2027{' '}
-            <span className="text-green-500">Roadmap</span>
+            {t('roadmap.title')}
           </motion.h2>
           
           <motion.p

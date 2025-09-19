@@ -1,30 +1,33 @@
 import { motion } from 'framer-motion'
 import { Shield, TrendingUp, Globe, Zap, Users, BarChart } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 const Features = () => {
+  const { t } = useTranslation()
+  
   const features = [
     {
       icon: Shield,
-      title: 'Sicurezza Bancaria',
-      description: 'Multi-signature, cold storage 95%, audit continui',
+      title: t('features.items.bankingSecurity.title'),
+      description: t('features.items.bankingSecurity.description'),
       color: '#3B82F6'
     },
     {
       icon: Zap,
-      title: 'Trading 24/7',
-      description: 'Settlement T+0, spread <0.5%, liquidità garantita',
+      title: t('features.items.trading247.title'),
+      description: t('features.items.trading247.description'),
       color: '#3B82F6'
     },
     {
       icon: Globe,
-      title: 'Accesso Globale',
-      description: 'KYC semplice, nessuna barriera geografica',
+      title: t('features.items.globalAccess.title'),
+      description: t('features.items.globalAccess.description'),
       color: '#3B82F6'
     },
     {
       icon: BarChart,
-      title: 'Trasparenza Totale',
-      description: 'Dashboard real-time, metriche di rischio, reporting automatico',
+      title: t('features.items.totalTransparency.title'),
+      description: t('features.items.totalTransparency.description'),
       color: '#3B82F6'
     }
   ]
@@ -40,10 +43,10 @@ const Features = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{color: '#E2E8F0'}}>
-            Piattaforma Sicura e Veloce
+            {t('features.title')}
           </h2>
           <p className="text-xl max-w-3xl mx-auto" style={{color: '#94A3B8'}}>
-            Tecnologia enterprise per la tokenizzazione assicurativa con standard istituzionali.
+            {t('features.subtitle')}
           </p>
         </motion.div>
 

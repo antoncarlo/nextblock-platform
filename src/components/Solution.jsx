@@ -1,8 +1,10 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 import { TrendingUp, Shield, Zap, Globe, DollarSign, BarChart3 } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 const Solution = () => {
+  const { t } = useTranslation()
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -16,17 +18,17 @@ const Solution = () => {
   const problemStats = [
     {
       value: "$16T",
-      label: "Mercato Assicurativo Globale",
+      label: t('solution.stats.insuranceMarket'),
       description: "Le compagnie tradizionali hanno fornito l'81.24% della capacità nel 2024"
     },
     {
       value: "$124B",
-      label: "Incassi Mancati",
+      label: t('solution.stats.missedOpportunities'),
       description: "A causa della non capacità finanziaria per nuovi rischi"
     },
     {
       value: "20%",
-      label: "Perdite per Inefficienza",
+      label: t('solution.stats.inefficiencyCosts'),
       description: "Processi lenti e costosi che sprecano fatturato potenziale"
     }
   ]
@@ -86,7 +88,7 @@ const Solution = () => {
             className="text-4xl md:text-5xl font-bold mb-6"
             style={{color: '#E2E8F0'}}
           >
-            Problemi del Mercato Tradizionale
+            {t('solution.problemTitle')}
           </motion.h2>
           
           <motion.p
@@ -97,9 +99,7 @@ const Solution = () => {
             className="text-xl mb-12 max-w-4xl mx-auto"
             style={{color: '#94A3B8'}}
           >
-            Capacità Limitata - $124B di opportunità perse
-            Processi Lenti - 20% di costi inutili  
-            Asset Bloccati - Zero liquidità
+            {t('solution.problemDescription')}
           </motion.p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -151,8 +151,7 @@ const Solution = () => {
             className="text-4xl md:text-5xl font-bold mb-6"
             style={{color: '#E2E8F0'}}
           >
-            La Soluzione{' '}
-            <span style={{color: '#3B82F6'}}>NEXTBLOCK</span>
+            {t('solution.solutionTitle')}
           </motion.h2>
           
           <motion.p
@@ -163,7 +162,7 @@ const Solution = () => {
             className="text-xl mb-4 max-w-4xl mx-auto"
             style={{color: '#94A3B8'}}
           >
-            La nostra missione è rivoluzionare il settore assicurativo attraverso la tokenizzazione.
+            {t('solution.solutionDescription')}
           </motion.p>
           
           <motion.p
@@ -174,9 +173,7 @@ const Solution = () => {
             className="text-lg max-w-4xl mx-auto"
             style={{color: '#94A3B8'}}
           >
-            Stiamo costruendo una piattaforma innovativa che democratizzerà l'accesso, 
-            aumenterà la liquidità e porterà trasparenza nel mercato, trasformando radicalmente 
-            il modo in cui i portafogli assicurativi vengono gestiti e scambiati.
+            {t('solution.benefits')}
           </motion.p>
         </motion.div>
 

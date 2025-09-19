@@ -1,27 +1,29 @@
 import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 const Alliances = () => {
+  const { t } = useTranslation()
   const partners = [
     {
       name: 'HyperLiquid',
       logo: 'https://hyperliquid.xyz/logo.svg',
-      description: 'Ultra-fast DEX integration'
+      description: t('alliances.partnerships.hyperliquid')
     },
     {
       name: 'Chainlink',
       logo: 'https://chain.link/assets/images/chainlink-logo.svg',
-      description: 'Reliable price oracles'
+      description: t('alliances.partnerships.chainlink')
     },
     {
       name: 'Circle',
       logo: 'https://www.circle.com/hubfs/sundaySky/images/logos/circle-logo.svg',
-      description: 'USDC stablecoin infrastructure'
+      description: t('alliances.partnerships.circle')
     },
     {
       name: 'Polygon',
       logo: 'https://polygon.technology/wp-content/uploads/2021/07/polygon-logo.svg',
-      description: 'Layer 2 scaling solution'
+      description: t('alliances.partnerships.polygon')
     }
   ]
 
@@ -37,7 +39,7 @@ const Alliances = () => {
         >
           <div className="flex items-center justify-center mb-6">
             <h2 className="text-4xl md:text-5xl font-bold" style={{color: '#E2E8F0'}}>
-              Partnership Strategiche
+              {t('alliances.title')}
             </h2>
             <ArrowUpRight className="w-8 h-8 ml-4" style={{color: '#3B82F6'}} strokeWidth={1.5} />
           </div>
