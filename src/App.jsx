@@ -31,7 +31,7 @@ import Portfolio from './components/Portfolio'
 import FiatGateway from './components/FiatGateway'
 import FireblocksCustody from './components/FireblocksCustody'
 import ComplianceFramework from './components/ComplianceFramework'
-import TreasuryManagement from './components/TreasuryManagement'
+import TreasuryManagement from './components/TreasuryManagementSimple'
 
 // Custom hook for wallet management
 import { useWallet } from './useWallet'
