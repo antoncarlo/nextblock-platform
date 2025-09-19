@@ -1,0 +1,298 @@
+{
+  "en": {
+    "buy": {
+      "title": "Buy Crypto",
+      "subtitle": "Purchase crypto and insurance tokens with fiat currency",
+      "steps": {
+        "amount": "Amount",
+        "payment": "Payment",
+        "kyc": "KYC",
+        "process": "Process",
+        "complete": "Complete"
+      },
+      "amount_selection": {
+        "title": "Select Amount and Token",
+        "currency": "Currency",
+        "amount": "Amount",
+        "amount_placeholder": "Enter amount",
+        "token_to_buy": "Token to Buy",
+        "estimate": "Estimate",
+        "you_will_receive": "You'll receive"
+      },
+      "payment_method": {
+        "title": "Choose Payment Method",
+        "summary": "Payment Summary",
+        "fee": "Fee",
+        "processing_time": "Processing time"
+      },
+      "kyc": {
+        "title": "Identity Verification",
+        "enhanced_required": "Enhanced KYC Required",
+        "enhanced_description": "Purchases over €1,000 require enhanced identity verification for regulatory compliance.",
+        "basic_verification": "Basic Verification",
+        "basic_description": "Your purchase amount qualifies for simplified verification.",
+        "secure_compliant": "Secure & Compliant",
+        "secure_description": "Your data is encrypted and stored securely",
+        "quick_process": "Quick Process",
+        "quick_description": "Verification typically takes 1-2 minutes",
+        "ready_verification": "Ready for Verification",
+        "ready_description": "Click below to start the secure verification process",
+        "verification_complete": "Verification Complete",
+        "complete_description": "Your identity has been successfully verified",
+        "start_verification": "Start Verification",
+        "verifying": "Verifying..."
+      },
+      "processing": {
+        "title": "Processing Payment",
+        "ready_process": "Ready to Process",
+        "ready_description": "Review your order and confirm payment",
+        "order_summary": "Order Summary",
+        "payment_method": "Payment method",
+        "processing_payment": "Processing Payment",
+        "processing_description": "Please wait while we process your payment...",
+        "payment_failed": "Payment Failed",
+        "failed_description": "There was an issue processing your payment. Please try again.",
+        "confirm_payment": "Confirm Payment",
+        "try_again": "Try Again"
+      },
+      "complete": {
+        "title": "Purchase Successful!",
+        "description": "Your {token} tokens will be delivered to your wallet shortly",
+        "transaction_details": "Transaction Details",
+        "amount_paid": "Amount paid",
+        "tokens_purchased": "Tokens purchased",
+        "transaction_id": "Transaction ID",
+        "delivery_time": "Delivery time",
+        "view_blockchain": "View on Blockchain",
+        "done": "Done"
+      },
+      "buttons": {
+        "continue": "Continue",
+        "back": "Back",
+        "cancel": "Cancel"
+      }
+    }
+  },
+  "it": {
+    "buy": {
+      "title": "Acquista Crypto",
+      "subtitle": "Acquista crypto e token assicurativi con valuta fiat",
+      "steps": {
+        "amount": "Importo",
+        "payment": "Pagamento",
+        "kyc": "KYC",
+        "process": "Processo",
+        "complete": "Completo"
+      },
+      "amount_selection": {
+        "title": "Seleziona Importo e Token",
+        "currency": "Valuta",
+        "amount": "Importo",
+        "amount_placeholder": "Inserisci importo",
+        "token_to_buy": "Token da Acquistare",
+        "estimate": "Stima",
+        "you_will_receive": "Riceverai"
+      },
+      "payment_method": {
+        "title": "Scegli Metodo di Pagamento",
+        "summary": "Riepilogo Pagamento",
+        "fee": "Commissione",
+        "processing_time": "Tempo di elaborazione"
+      },
+      "kyc": {
+        "title": "Verifica Identità",
+        "enhanced_required": "KYC Avanzato Richiesto",
+        "enhanced_description": "Acquisti superiori a €1.000 richiedono verifica identità avanzata per conformità normativa.",
+        "basic_verification": "Verifica Base",
+        "basic_description": "Il tuo importo di acquisto qualifica per verifica semplificata.",
+        "secure_compliant": "Sicuro e Conforme",
+        "secure_description": "I tuoi dati sono crittografati e archiviati in sicurezza",
+        "quick_process": "Processo Rapido",
+        "quick_description": "La verifica richiede tipicamente 1-2 minuti",
+        "ready_verification": "Pronto per Verifica",
+        "ready_description": "Clicca sotto per iniziare il processo di verifica sicuro",
+        "verification_complete": "Verifica Completata",
+        "complete_description": "La tua identità è stata verificata con successo",
+        "start_verification": "Inizia Verifica",
+        "verifying": "Verificando..."
+      },
+      "processing": {
+        "title": "Elaborazione Pagamento",
+        "ready_process": "Pronto per Elaborare",
+        "ready_description": "Rivedi il tuo ordine e conferma il pagamento",
+        "order_summary": "Riepilogo Ordine",
+        "payment_method": "Metodo di pagamento",
+        "processing_payment": "Elaborazione Pagamento",
+        "processing_description": "Attendi mentre elaboriamo il tuo pagamento...",
+        "payment_failed": "Pagamento Fallito",
+        "failed_description": "C'è stato un problema nell'elaborare il tuo pagamento. Riprova.",
+        "confirm_payment": "Conferma Pagamento",
+        "try_again": "Riprova"
+      },
+      "complete": {
+        "title": "Acquisto Riuscito!",
+        "description": "I tuoi token {token} saranno consegnati al tuo wallet a breve",
+        "transaction_details": "Dettagli Transazione",
+        "amount_paid": "Importo pagato",
+        "tokens_purchased": "Token acquistati",
+        "transaction_id": "ID Transazione",
+        "delivery_time": "Tempo di consegna",
+        "view_blockchain": "Visualizza su Blockchain",
+        "done": "Fatto"
+      },
+      "buttons": {
+        "continue": "Continua",
+        "back": "Indietro",
+        "cancel": "Annulla"
+      }
+    }
+  },
+  "es": {
+    "buy": {
+      "title": "Comprar Crypto",
+      "subtitle": "Compra crypto y tokens de seguros con moneda fiat",
+      "steps": {
+        "amount": "Cantidad",
+        "payment": "Pago",
+        "kyc": "KYC",
+        "process": "Proceso",
+        "complete": "Completo"
+      },
+      "amount_selection": {
+        "title": "Seleccionar Cantidad y Token",
+        "currency": "Moneda",
+        "amount": "Cantidad",
+        "amount_placeholder": "Ingresa cantidad",
+        "token_to_buy": "Token a Comprar",
+        "estimate": "Estimación",
+        "you_will_receive": "Recibirás"
+      },
+      "payment_method": {
+        "title": "Elegir Método de Pago",
+        "summary": "Resumen de Pago",
+        "fee": "Comisión",
+        "processing_time": "Tiempo de procesamiento"
+      },
+      "kyc": {
+        "title": "Verificación de Identidad",
+        "enhanced_required": "KYC Mejorado Requerido",
+        "enhanced_description": "Compras superiores a €1.000 requieren verificación de identidad mejorada para cumplimiento regulatorio.",
+        "basic_verification": "Verificación Básica",
+        "basic_description": "Tu cantidad de compra califica para verificación simplificada.",
+        "secure_compliant": "Seguro y Conforme",
+        "secure_description": "Tus datos están encriptados y almacenados de forma segura",
+        "quick_process": "Proceso Rápido",
+        "quick_description": "La verificación típicamente toma 1-2 minutos",
+        "ready_verification": "Listo para Verificación",
+        "ready_description": "Haz clic abajo para iniciar el proceso de verificación seguro",
+        "verification_complete": "Verificación Completa",
+        "complete_description": "Tu identidad ha sido verificada exitosamente",
+        "start_verification": "Iniciar Verificación",
+        "verifying": "Verificando..."
+      },
+      "processing": {
+        "title": "Procesando Pago",
+        "ready_process": "Listo para Procesar",
+        "ready_description": "Revisa tu pedido y confirma el pago",
+        "order_summary": "Resumen del Pedido",
+        "payment_method": "Método de pago",
+        "processing_payment": "Procesando Pago",
+        "processing_description": "Por favor espera mientras procesamos tu pago...",
+        "payment_failed": "Pago Fallido",
+        "failed_description": "Hubo un problema procesando tu pago. Por favor intenta de nuevo.",
+        "confirm_payment": "Confirmar Pago",
+        "try_again": "Intentar de Nuevo"
+      },
+      "complete": {
+        "title": "¡Compra Exitosa!",
+        "description": "Tus tokens {token} serán entregados a tu wallet en breve",
+        "transaction_details": "Detalles de Transacción",
+        "amount_paid": "Cantidad pagada",
+        "tokens_purchased": "Tokens comprados",
+        "transaction_id": "ID de Transacción",
+        "delivery_time": "Tiempo de entrega",
+        "view_blockchain": "Ver en Blockchain",
+        "done": "Hecho"
+      },
+      "buttons": {
+        "continue": "Continuar",
+        "back": "Atrás",
+        "cancel": "Cancelar"
+      }
+    }
+  },
+  "zh": {
+    "buy": {
+      "title": "购买加密货币",
+      "subtitle": "使用法定货币购买加密货币和保险代币",
+      "steps": {
+        "amount": "金额",
+        "payment": "支付",
+        "kyc": "身份验证",
+        "process": "处理",
+        "complete": "完成"
+      },
+      "amount_selection": {
+        "title": "选择金额和代币",
+        "currency": "货币",
+        "amount": "金额",
+        "amount_placeholder": "输入金额",
+        "token_to_buy": "要购买的代币",
+        "estimate": "估算",
+        "you_will_receive": "您将收到"
+      },
+      "payment_method": {
+        "title": "选择支付方式",
+        "summary": "支付摘要",
+        "fee": "手续费",
+        "processing_time": "处理时间"
+      },
+      "kyc": {
+        "title": "身份验证",
+        "enhanced_required": "需要增强型KYC",
+        "enhanced_description": "超过€1,000的购买需要增强身份验证以符合监管要求。",
+        "basic_verification": "基础验证",
+        "basic_description": "您的购买金额符合简化验证条件。",
+        "secure_compliant": "安全合规",
+        "secure_description": "您的数据已加密并安全存储",
+        "quick_process": "快速流程",
+        "quick_description": "验证通常需要1-2分钟",
+        "ready_verification": "准备验证",
+        "ready_description": "点击下方开始安全验证流程",
+        "verification_complete": "验证完成",
+        "complete_description": "您的身份已成功验证",
+        "start_verification": "开始验证",
+        "verifying": "验证中..."
+      },
+      "processing": {
+        "title": "处理支付",
+        "ready_process": "准备处理",
+        "ready_description": "检查您的订单并确认支付",
+        "order_summary": "订单摘要",
+        "payment_method": "支付方式",
+        "processing_payment": "处理支付中",
+        "processing_description": "请等待我们处理您的支付...",
+        "payment_failed": "支付失败",
+        "failed_description": "处理您的支付时出现问题。请重试。",
+        "confirm_payment": "确认支付",
+        "try_again": "重试"
+      },
+      "complete": {
+        "title": "购买成功！",
+        "description": "您的{token}代币将很快发送到您的钱包",
+        "transaction_details": "交易详情",
+        "amount_paid": "支付金额",
+        "tokens_purchased": "购买的代币",
+        "transaction_id": "交易ID",
+        "delivery_time": "交付时间",
+        "view_blockchain": "在区块链上查看",
+        "done": "完成"
+      },
+      "buttons": {
+        "continue": "继续",
+        "back": "返回",
+        "cancel": "取消"
+      }
+    }
+  }
+}

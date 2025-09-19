@@ -118,28 +118,24 @@ function App() {
           <Route 
             path="/dashboard" 
             element={
-              isConnected ? (
-                <Dashboard 
-                  account={account}
-                  chainId={chainId}
-                  networkName={networkName}
-                  userRole={userRole}
-                  onDisconnect={disconnectWallet}
-                  onSelectRole={selectRole}
-                  onSwitchToEthereum={switchToEthereum}
-                  onSwitchToHyperLiquid={switchToHyperLiquid}
-                  isConnected={isConnected}
-                  onSwitchNetwork={(newChainId) => {
-                    if (newChainId === 1 || newChainId === 11155111) {
-                      switchToEthereum()
-                    } else if (newChainId === 998 || newChainId === 999) {
-                      switchToHyperLiquid()
-                    }
-                  }}
-                />
-              ) : (
-                <Navigate to="/" replace />
-              )
+              <Dashboard 
+                account={account || '0x1234567890123456789012345678901234567890'}
+                chainId={chainId || 1}
+                networkName={networkName || 'Ethereum'}
+                userRole={userRole}
+                onDisconnect={disconnectWallet}
+                onSelectRole={selectRole}
+                onSwitchToEthereum={switchToEthereum}
+                onSwitchToHyperLiquid={switchToHyperLiquid}
+                isConnected={isConnected}
+                onSwitchNetwork={(newChainId) => {
+                  if (newChainId === 1 || newChainId === 11155111) {
+                    switchToEthereum()
+                  } else if (newChainId === 998 || newChainId === 999) {
+                    switchToHyperLiquid()
+                  }
+                }}
+              />
             } 
           />
           

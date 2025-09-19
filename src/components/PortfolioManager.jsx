@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { 
   Wallet, 
@@ -14,6 +14,9 @@ import {
   DollarSign
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import BuyModal from './BuyModal'
+import TradeModal from './TradeModal'
+import StakeModal from './StakeModal'
 
 const PortfolioManager = ({ 
   isConnected, 
@@ -27,6 +30,9 @@ const PortfolioManager = ({
   const [showBalances, setShowBalances] = useState(true)
   const [totalValue, setTotalValue] = useState(0)
   const [priceChanges, setPriceChanges] = useState({})
+  const [isBuyModalOpen, setIsBuyModalOpen] = useState(false)
+  const [isTradeModalOpen, setIsTradeModalOpen] = useState(false)
+  const [isStakeModalOpen, setIsStakeModalOpen] = useState(false)
 
   // Mock data per demo - in produzione si collegherebbe alle API reali
   const mockBalances = {
@@ -315,6 +321,7 @@ const PortfolioManager = ({
         <motion.button
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
+          onClick={() => setIsBuyModalOpen(true)}
           className="bg-gradient-to-r from-green-500 to-emerald-500 p-4 rounded-xl text-white font-semibold flex items-center justify-center space-x-2"
         >
           <TrendingUp className="w-5 h-5" />
@@ -324,6 +331,7 @@ const PortfolioManager = ({
         <motion.button
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
+          onClick={() => setIsTradeModalOpen(true)}
           className="bg-gradient-to-r from-blue-500 to-cyan-500 p-4 rounded-xl text-white font-semibold flex items-center justify-center space-x-2"
         >
           <Zap className="w-5 h-5" />
@@ -333,12 +341,35 @@ const PortfolioManager = ({
         <motion.button
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
+          onClick={() => setIsStakeModalOpen(true)}
           className="bg-gradient-to-r from-purple-500 to-violet-500 p-4 rounded-xl text-white font-semibold flex items-center justify-center space-x-2"
         >
           <Shield className="w-5 h-5" />
           <span>Stake</span>
         </motion.button>
       </div>
+
+      {/* Buy Modal */}
+      <BuyModal
+        isOpen={isBuyModalOpen}
+        onClose={() => setIsBuyModalOpen(false)}
+        targetToken="USDC"
+        walletAddress={walletAddress}
+      />
+
+      {/* Trade Modal */}
+      <TradeModal
+        isOpen={isTradeModalOpen}
+        onClose={() => setIsTradeModalOpen(false)}
+        walletAddress={walletAddress}
+      />
+
+      {/* Stake Modal */}
+      <StakeModal
+        isOpen={isStakeModalOpen}
+        onClose={() => setIsStakeModalOpen(false)}
+        walletAddress={walletAddress}
+      />
     </motion.div>
   )
 }
